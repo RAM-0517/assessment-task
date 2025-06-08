@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+          <hr>
+          <h2>YAY! It's BOGO</h2>
+          <hr>
+        </div>
+        <div class="unit-container">
+          <!-- Box 1 -->
+          <div class="box" data-price="10" data-units="1">
+            <div class="header">
+              <input type="radio" name="unit" />
+              <span>1 Unit</span>
+              <span class="tag">10% Off</span>
+              <div class="price-block">
+                <span class="price">$10.00 USD</span>
+                <span class="old-price">$24.00 USD</span>
+              </div>
+              <span class="standard-price">Standard Price</span>
+            </div>
+            <div class="options">
+              <div class="option-row">
+                <span>#1</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option value="" disabled selected>Color</option>
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Box 2 -->
+          <div class="box active" data-price="18" data-units="2">
+            <span class="popular">MOST POPULAR</span>
+            <div class="header">
+              <input type="radio" name="unit" checked />
+              <span>2 Unit</span>
+              <span class="tag">20% Off</span>
+              <div class="price-block">
+                <span class="price">$18.00 USD</span>
+                <span class="old-price">$24.00 USD</span>
+              </div>
+            </div>
+            <div class="options">
+              <div class="option-row">
+                <span>#1</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option value="" disabled selected>Color</option>
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+              <div class="option-row">
+                <span>#2</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option value="" disabled selected>Color</option>
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Box 3 -->
+          <div class="box" data-price="24" data-units="3">
+            <div class="header">
+              <input type="radio" name="unit" />
+              <span>3 Unit</span>
+              <span class="tag">30% Off</span>
+              <div class="price-block">
+                <span class="price">$24.00 USD</span>
+                <span class="old-price">$24.00 USD</span>
+              </div>
+            </div>
+            <div class="options">
+              <div class="option-row">
+                <span>#1</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option value="" disabled selected>Color</option>
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+              <div class="option-row">
+                <span>#2</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option value="" disabled selected>Color</option>
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+              <div class="option-row">
+                <span>#3</span>
+                <select>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select>
+                  <option value="" disabled selected>Color</option>
+                  <option>Black</option><o
+                  ption>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <span>Free Delivery</span>
+          <span id="total">Total: $18.00 USD</span>
+        </div>
+        <button class="add-to-cart"><img src="./Icon.png" alt="+"> Add to Cart</button>
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .container {
+    width: 462px;
+  }
+
+  .heading {
+    width: 343px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .heading hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #000;
+  }
+
+  .heading h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #FF6B82;
+    white-space: nowrap;
+  }
+
+  .unit-container {
+    width: 341px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c8c8c8;
+    padding: 10px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    min-height: 74px;
+  }
+
+  .box.active {
+    border-color: #ff6b82;
+    background: #fff9fa;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    background-color: #FF6B82;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .price-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+
+  .price {
+    font-weight: bold;
+  }
+
+  .old-price {
+    font-size: 10px;
+    text-decoration: line-through;
+    color: #999;
+    margin: auto;
+  }
+
+  .popular {
+    background: #FF6B82;
+    color: white;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    position: absolute;
+    top: -10px;
+    right: 8px;
+    z-index: 1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .standard-price {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: -15px;
+  }
+
+  .options {
+    display: none;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .box.active .options {
+    display: flex;
+  }
+
+  .option-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+
+  .option-row span {
+    display: flex;
+    align-items: center;
+  }
+
+  .option-row label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  select {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 65.98px;
+    height: 25.31px;
+  }
+
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #FF6B82;
+    font-weight: bold;
+    width: 341px;
+  }
+
+  .add-to-cart {
+    background-color: #FF6B82;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 342px;
+    height: 40px;
+  }
